@@ -1,6 +1,6 @@
 <template>
    <div class="col-6 col-md-4">
-      <div class="card">
+      <div class="card h-100">
          <img :src="project.cover_image" :alt="project.name" class="card-img-top" />
          <div class="card-body">
             <h5 class="card-title">
