@@ -1,6 +1,8 @@
 <template>
-   <main>
-      <ProjectCard v-for="project in projects" :project="project" />
+   <main class="container">
+      <div class="row g-3">
+         <ProjectCard v-for="project in projects" :project="project" />
+      </div>
    </main>
 </template>
 

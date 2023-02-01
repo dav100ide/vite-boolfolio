@@ -1,6 +1,16 @@
 <template>
-   <div>
-      {{ project.name }}
+   <div class="col-6 col-md-4">
+      <div class="card">
+         <img :src="project.cover_image" :alt="project.name" class="card-img-top" />
+         <div class="card-body">
+            <h5 class="card-title">
+               {{ project.name }}
+            </h5>
+            <p class="card-text">
+               {{ project.description }}
+            </p>
+         </div>
+      </div>
    </div>
 </template>
 
@@ -26,8 +36,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-div {
-   color: blueviolet;
-}
-</style>
+<style lang="scss" scoped></style>
