@@ -1,7 +1,13 @@
 <template>
-   <div class="col-6 col-md-4">
+   <div class="col-6 col-md-3">
       <div class="card h-100">
-         <img :src="project.cover_image" :alt="project.name" class="card-img-top" />
+         <img
+            v-if="project.cover_image"
+            :src="project.cover_image"
+            :alt="project.name"
+            class="card-img-top"
+         />
+         <img v-else src="https://via.placeholder.com/150" alt="placeholder" />
          <div class="card-body">
             <h5 class="card-title">
                {{ project.name }}

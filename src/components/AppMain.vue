@@ -1,5 +1,5 @@
 <template>
-   <main class="container-fluid">
+   <main class="container">
       <div class="row g-3">
          <ProjectCard v-for="project in projects" :project="project" />
       </div>
